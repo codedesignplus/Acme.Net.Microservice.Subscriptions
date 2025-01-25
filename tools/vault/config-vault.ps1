@@ -154,7 +154,7 @@ vault write store-acme-database/config/db-ms-subscriptions `
 
 vault write store-acme-database/roles/ms-subscriptions-mongo-role `
     db_name=db-ms-subscriptions `
-    creation_statements="{ """db""": """admin""", """roles""": [{ """role""": """readWrite""", """db""": """db-ms-subscriptions""" }] }" `
+    creation_statements='{ """db""": """admin""", """roles""": [{ """role""": """readWrite""", """db""": """db-ms-subscriptions""" }] }' `
     default_ttl="1h" `
     max_ttl="24h"
 
@@ -173,6 +173,6 @@ vault write store-acme-rabbitmq/config/connection `
     password="password"
 
 vault write store-acme-rabbitmq/roles/ms-subscriptions-rabbitmq-role `
-    vhosts="{"""/""":{"""write""": """.*""", """read""": """.*""", """configure""": """.*"""}}"
+    vhosts='{"""/""":{"""write""": """.*""", """read""": """.*""", """configure""": """.*"""}}'
 
 vault read store-acme-rabbitmq/creds/ms-subscriptions-rabbitmq-role

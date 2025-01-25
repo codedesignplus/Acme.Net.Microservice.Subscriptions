@@ -90,6 +90,7 @@ public class SubscriptionController(IMediator mediator, IMapper mapper) : Contro
     /// <param name="id">The unique identifier of the Subscription.</param>
     /// <param name="cancellationToken">Cancellation token.</param>
     /// <returns>HTTP status code 204 (No Content).</returns>
+    [HttpPatch("{id}/inactivate")]
     public async Task<IActionResult> InactivateSubscription(Guid id, CancellationToken cancellationToken)
     {
         await mediator.Send(new InactivateSubscriptionCommand(id), cancellationToken);

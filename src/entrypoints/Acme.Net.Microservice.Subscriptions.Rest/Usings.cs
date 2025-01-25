@@ -22,7 +22,6 @@ global using CodeDesignPlus.Net.Serializers;
 
 global using Acme.Net.Microservice.Subscriptions.Application.Subscription.Commands.CreateSubscription;
 global using Acme.Net.Microservice.Subscriptions.Application.Subscription.Commands.UpdateSubscription;
-global using Acme.Net.Microservice.Subscriptions.Application.Subscription.Commands.DeleteSubscription;
 global using Acme.Net.Microservice.Subscriptions.Application.Subscription.Queries.GetSubscriptionById;
 global using Acme.Net.Microservice.Subscriptions.Application.Subscription.Queries.GetAllSubscription;
 global using Acme.Net.Microservice.Subscriptions.Application.Subscription.Commands.InactivateSubscription;
